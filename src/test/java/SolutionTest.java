@@ -25,4 +25,20 @@ public class SolutionTest {
 
         Assert.assertTrue(actual);
     }
+
+    @Test
+    public void find132patternTest4(){
+        int[] nums = {1,0,1,-4,-3};
+        boolean actual = new Solution().find132pattern(nums);
+
+        Assert.assertFalse(actual);
+    }
+    @Test
+    public void find132patternTest5(){
+        int[] nums = {42,43,6,12,3,4,6,11,20};
+        boolean actual = new Solution().find132pattern(nums);
+
+        Assert.assertTrue(actual);
+    }
+
 }
